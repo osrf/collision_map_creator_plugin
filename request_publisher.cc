@@ -5,7 +5,6 @@
 
 #include "gazebo/gazebo.hh"
 #include "gazebo/common/common.hh"
-#include "gazebo/math/Vector3.hh"
 #include "gazebo/transport/transport.hh"
 #include "gazebo/physics/physics.hh"
 #include "gazebo/msgs/msgs.hh"
