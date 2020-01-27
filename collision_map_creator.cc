@@ -1,7 +1,13 @@
 #include <iostream>
 #include <math.h>
+
+// See https://github.com/ignf/gilviewer/issues/8
+#define png_infopp_NULL (png_infopp)NULL
+#define int_p_NULL (int*)NULL
+#define png_bytep_NULL (png_bytep)NULL
 #include <boost/gil/gil_all.hpp>
 #include <boost/gil/extension/io/png_dynamic_io.hpp>
+
 #include <boost/shared_ptr.hpp>
 #include <sdf/sdf.hh>
 #include <ignition/math/Vector3.hh>
