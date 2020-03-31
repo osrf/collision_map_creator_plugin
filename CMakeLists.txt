@@ -3,11 +3,8 @@ cmake_minimum_required(VERSION 2.8.8 FATAL_ERROR)
 FIND_PACKAGE( Boost 1.40 COMPONENTS system REQUIRED )
 set (CMAKE_CXX_FLAGS "-g -Wall -std=c++11")
 
-include (FindPkgConfig)
-if (PKG_CONFIG_FOUND)
-  pkg_check_modules(GAZEBO gazebo)
-  pkg_check_modules(SDF sdformat)
-endif()
+find_package(gazebo REQUIRED)
+
 include_directories(
   ${GAZEBO_INCLUDE_DIRS}
   ${SDF_INCLUDE_DIRS}
